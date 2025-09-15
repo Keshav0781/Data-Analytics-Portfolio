@@ -12,6 +12,22 @@ Data Analytics professional with 4+ years of experience in retail analytics, bus
 - **Databases:** SQL Server, MySQL, PostgreSQL
 - **Tools:** Pandas, NumPy, Airflow, Git
 
+## Dataset
+- **Source**: Synthetic data generated for demonstration purposes
+- **Records**: 10,000+ sample transactions
+- **Features**: Order ID, Date, Category, Price, Quantity, Customer ID
+- **File**: `sample_data.csv` (sample of the generated data)
+- **Note**: The main analysis uses programmatically generated data to simulate real-world e-commerce patterns
+
+## Data Schema
+- `order_id`: Unique identifier for each order
+- `order_date`: Date of purchase
+- `category`: Product category (Electronics, Clothing, etc.)
+- `price`: Unit price of the product
+- `quantity`: Number of items ordered
+- `total_amount`: Total order value (price × quantity)
+- `customer_id`: Unique customer identifier
+
 ## 📊 Featured Projects
 
 ### 1. Retail Sales Analytics & Demand Forecasting
