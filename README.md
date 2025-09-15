@@ -34,7 +34,7 @@ Data Analytics professional with 4+ years of experience in retail analytics, bus
 
 ## 📫 Contact
 - **Email:** iamkeshav0781@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile]
+- **LinkedIn:** [[Your LinkedIn Profile]](https://www.linkedin.com/in/keshav-jha-11899b255/)
 - **Location:** Erlangen, Germany
 
 ---
