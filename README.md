@@ -53,8 +53,7 @@ Data Analytics professional with 4+ years of experience in retail analytics, bus
 ## 🏆 Achievements
 - **Accenture Celebrates Excellence Award 2020**
 - **Pinnacle Award 2021** - Top performer recognition
-- **82% Accuracy** in student performance prediction models
-- **Published Research** in medical image analysis (upcoming)
+
 
 ## 📫 Contact Information
 - **Email:** iamkeshav0781@gmail.com
