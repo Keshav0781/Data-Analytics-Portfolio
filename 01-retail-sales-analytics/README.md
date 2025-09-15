@@ -15,11 +15,21 @@ Analysis of e-commerce sales data to identify purchase patterns and develop dema
 - Statistical analysis for pattern recognition
 
 ## Files in this project:
-- `data_analysis.py` - Main analysis script
-- `demand_forecasting.py` - Forecasting models
-- `data_visualization.py` - Charts and plots
-- `sample_data.csv` - Sample dataset
-- `requirements.txt` - Required Python packages
+- [`data_analysis.py`](data_analysis.py) - Main analysis script with comprehensive EDA
+- [`demand_forecasting.py`](demand_forecasting.py) - Advanced forecasting models
+- [`data_visualization.py`](data_visualization.py) - Executive dashboards and charts
+- [`sample_data.csv`](sample_data.csv) - Sample dataset structure
+- [`requirements.txt`](requirements.txt) - Required Python packages
+
+## How to Run
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run individual scripts
+python data_analysis.py
+python demand_forecasting.py
+python data_visualization.py
 
 ## Results
 - Improved seasonal stock prediction accuracy
