@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python data_analysis.py
 python demand_forecasting.py
 python data_visualization.py
-
+---
 ## Result
 - Improved seasonal stock prediction accuracy
 - Identified key factors affecting demand
