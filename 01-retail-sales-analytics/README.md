@@ -1,11 +1,11 @@
 # Retail Sales Analytics & Demand Forecasting
 
 ## Project Overview
-End-to-end analysis of synthetic e-commerce sales data to identify purchase patterns and build demand forecasting models for inventory optimization.
+End-to-end analytics solution using **synthetic e-commerce retail data** to identify purchase patterns and build demand forecasting models for inventory optimization.
 
 ## Dataset
-This project uses **synthetic data generated programmatically** to simulate real-world retail transactions (orders, customers, categories, prices).  
-The file `sample_data.csv` is included as an **example schema** only.
+This project uses **synthetic data generated programmatically** to simulate realistic retail transactions (orders, customers, categories, prices).  
+The file `sample_data.csv` is included only as an **example schema**.
 
 ## Business Problem
 - Need to predict seasonal demand accurately  
