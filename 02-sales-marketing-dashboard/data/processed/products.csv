@@ -1,0 +1,51 @@
+product_id,category,base_price
+PROD_001,Electronics,382
+PROD_002,Sports,250
+PROD_003,Clothing,186
+PROD_004,Clothing,112
+PROD_005,Home & Garden,207
+PROD_006,Books,77
+PROD_007,Books,154
+PROD_008,Home & Garden,139
+PROD_009,Clothing,449
+PROD_010,Electronics,57
+PROD_011,Electronics,207
+PROD_012,Sports,202
+PROD_013,Books,398
+PROD_014,Electronics,431
+PROD_015,Clothing,470
+PROD_016,Home & Garden,497
+PROD_017,Clothing,166
+PROD_018,Beauty,123
+PROD_019,Clothing,449
+PROD_020,Beauty,451
+PROD_021,Books,421
+PROD_022,Clothing,156
+PROD_023,Books,200
+PROD_024,Clothing,59
+PROD_025,Clothing,313
+PROD_026,Sports,221
+PROD_027,Clothing,341
+PROD_028,Clothing,264
+PROD_029,Sports,340
+PROD_030,Home & Garden,199
+PROD_031,Home & Garden,310
+PROD_032,Electronics,462
+PROD_033,Home & Garden,466
+PROD_034,Home & Garden,31
+PROD_035,Books,319
+PROD_036,Home & Garden,222
+PROD_037,Clothing,310
+PROD_038,Home & Garden,260
+PROD_039,Clothing,301
+PROD_040,Clothing,301
+PROD_041,Books,45
+PROD_042,Home & Garden,191
+PROD_043,Beauty,288
+PROD_044,Home & Garden,326
+PROD_045,Electronics,162
+PROD_046,Sports,15
+PROD_047,Electronics,444
+PROD_048,Sports,413
+PROD_049,Sports,327
+PROD_050,Sports,477
