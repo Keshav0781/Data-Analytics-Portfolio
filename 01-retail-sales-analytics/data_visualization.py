@@ -15,6 +15,9 @@ from plotly.subplots import make_subplots
 import warnings
 warnings.filterwarnings('ignore')
 
+# Create reports folder
+os.makedirs("reports", exist_ok=True)
+
 class RetailDataVisualizer:
     def __init__(self):
         """Initialize the retail data visualizer"""
@@ -326,8 +329,10 @@ class RetailDataVisualizer:
         cbar.set_label('Total Spent ($)')
         
         plt.tight_layout()
-        plt.show()
-
+        plt.savefig("reports/customer_analysis.png")
+        plt.close()
+        print("Customer analysis saved to reports/customer_analysis.png")
+        
 def main():
     """Main execution function for visualization demo"""
     print("Starting Retail Data Visualization Suite...")
@@ -352,7 +357,7 @@ def main():
     visualizer.create_customer_analysis()
     
     print("\n=== VISUALIZATION SUITE COMPLETE ===")
-    print("All visualizations have been generated successfully!")
+    print("All visualizations saved under /reports/")
 
 if __name__ == "__main__":
     main()
