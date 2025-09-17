@@ -7,39 +7,43 @@ import os
 import sqlite3
 import pandas as pd
 
+DATA_DIR = "data/processed"
+DB_PATH = os.path.join(DATA_DIR, "sales_marketing.db")
+
 def main():
-    data_dir = "data/processed"
-    db_path = os.path.join(data_dir, "sales_marketing.db")
+    print(f"📂 Checking directory: {DATA_DIR}")
 
-    # Ensure folder exists
-    if not os.path.exists(data_dir):
-        raise FileNotFoundError(f"❌ Directory not found: {data_dir}")
+    if not os.path.exists(DATA_DIR):
+        print("❌ Data directory does not exist.")
+        return
 
-    # Input files
-    customers_csv = os.path.join(data_dir, "customers.csv")
-    products_csv = os.path.join(data_dir, "products.csv")
-    sales_csv = os.path.join(data_dir, "sales.csv")
+    # Input CSVs
+    files = {
+        "customers": os.path.join(DATA_DIR, "customers.csv"),
+        "products": os.path.join(DATA_DIR, "products.csv"),
+        "sales": os.path.join(DATA_DIR, "sales.csv"),
+    }
 
-    for f in [customers_csv, products_csv, sales_csv]:
-        if not os.path.exists(f):
-            raise FileNotFoundError(f"❌ Missing file: {f}")
-
-    print("📂 Loading CSV files...")
-    customers = pd.read_csv(customers_csv)
-    products = pd.read_csv(products_csv)
-    sales = pd.read_csv(sales_csv)
+    # Check files
+    for name, path in files.items():
+        if not os.path.exists(path):
+            print(f"❌ Missing {name} file: {path}")
+            return
+        else:
+            print(f"✅ Found {name} file: {path}")
 
     print("📝 Creating SQLite database...")
-    conn = sqlite3.connect(db_path)
+    conn = sqlite3.connect(DB_PATH)
 
-    customers.to_sql("customers", conn, if_exists="replace", index=False)
-    products.to_sql("products", conn, if_exists="replace", index=False)
-    sales.to_sql("sales", conn, if_exists="replace", index=False)
+    for table_name, path in files.items():
+        df = pd.read_csv(path)
+        print(f"   → Writing {table_name} ({len(df)} rows)")
+        df.to_sql(table_name, conn, if_exists="replace", index=False)
 
     conn.commit()
     conn.close()
 
-    print(f"✅ Database created successfully: {db_path}")
+    print(f"✅ Database created successfully: {DB_PATH}")
 
 if __name__ == "__main__":
     main()
