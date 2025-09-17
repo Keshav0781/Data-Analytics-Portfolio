@@ -1,52 +1,45 @@
 """
-Create SQLite Database from Synthetic Sales Data
+Create SQLite Database from Processed CSVs
 Author: Keshav Jha
 """
 
+import os
 import sqlite3
 import pandas as pd
-import os
 
-# Paths
-DATA_DIR = "data/processed"
-DB_PATH = os.path.join(DATA_DIR, "sales_marketing.db")
+def main():
+    data_dir = "data/processed"
+    db_path = os.path.join(data_dir, "sales_marketing.db")
 
-def create_database():
-    print("📂 Looking for data in:", DATA_DIR)
+    # Ensure folder exists
+    if not os.path.exists(data_dir):
+        raise FileNotFoundError(f"❌ Directory not found: {data_dir}")
 
-    # Check files exist
-    files = ["customers.csv", "products.csv", "sales.csv"]
-    for f in files:
-        path = os.path.join(DATA_DIR, f)
-        if not os.path.exists(path):
-            print(f"❌ Missing file: {path}")
-            return
-        else:
-            print(f"✅ Found {path}")
+    # Input files
+    customers_csv = os.path.join(data_dir, "customers.csv")
+    products_csv = os.path.join(data_dir, "products.csv")
+    sales_csv = os.path.join(data_dir, "sales.csv")
 
-    # Remove existing DB if re-running
-    if os.path.exists(DB_PATH):
-        os.remove(DB_PATH)
-        print("⚠️ Removed existing database.")
+    for f in [customers_csv, products_csv, sales_csv]:
+        if not os.path.exists(f):
+            raise FileNotFoundError(f"❌ Missing file: {f}")
 
-    # Connect to SQLite
-    conn = sqlite3.connect(DB_PATH)
+    print("📂 Loading CSV files...")
+    customers = pd.read_csv(customers_csv)
+    products = pd.read_csv(products_csv)
+    sales = pd.read_csv(sales_csv)
 
-    # Load CSVs
-    print("📥 Loading CSVs...")
-    customers = pd.read_csv(os.path.join(DATA_DIR, "customers.csv"))
-    products = pd.read_csv(os.path.join(DATA_DIR, "products.csv"))
-    sales = pd.read_csv(os.path.join(DATA_DIR, "sales.csv"))
+    print("📝 Creating SQLite database...")
+    conn = sqlite3.connect(db_path)
 
-    # Write tables
-    print("📝 Writing tables to database...")
-    customers.to_sql("customers", conn, index=False, if_exists="replace")
-    products.to_sql("products", conn, index=False, if_exists="replace")
-    sales.to_sql("sales", conn, index=False, if_exists="replace")
+    customers.to_sql("customers", conn, if_exists="replace", index=False)
+    products.to_sql("products", conn, if_exists="replace", index=False)
+    sales.to_sql("sales", conn, if_exists="replace", index=False)
 
     conn.commit()
     conn.close()
-    print(f"✅ SQLite database created at {DB_PATH}")
+
+    print(f"✅ Database created successfully: {db_path}")
 
 if __name__ == "__main__":
-    create_database()
+    main()
