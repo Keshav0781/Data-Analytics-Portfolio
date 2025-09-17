@@ -2,9 +2,10 @@
 -- Queries for Sales & Marketing Dashboard Project
 -- ===============================================
 
--- 1) Total revenue and orders by region
+-- 1) Total revenue and "orders" by region
+-- Using DISTINCT date+customer_id as proxy for orders
 SELECT c.region,
-       COUNT(DISTINCT s.order_id) AS total_orders,
+       COUNT(DISTINCT s.date || '-' || s.customer_id) AS total_orders,
        ROUND(SUM(s.revenue), 2) AS total_revenue
 FROM sales s
 JOIN customers c ON s.customer_id = c.customer_id
@@ -21,7 +22,7 @@ GROUP BY c.customer_id, c.region
 ORDER BY total_spent DESC
 LIMIT 5;
 
--- 3) Top 20 products by revenue (fixed: removed product_name)
+-- 3) Top 20 products by revenue
 SELECT p.product_id, p.category,
        SUM(s.quantity) AS units_sold,
        ROUND(SUM(s.revenue), 2) AS revenue
@@ -32,7 +33,8 @@ ORDER BY revenue DESC
 LIMIT 20;
 
 -- 4) Average order value (AOV)
-SELECT ROUND(SUM(s.revenue) * 1.0 / COUNT(DISTINCT s.order_id), 2) AS avg_order_value
+SELECT ROUND(SUM(s.revenue) * 1.0 /
+             COUNT(DISTINCT s.date || '-' || s.customer_id), 2) AS avg_order_value
 FROM sales s;
 
 -- 5) Customer segmentation by revenue
@@ -57,7 +59,7 @@ JOIN products p ON s.product_id = p.product_id
 GROUP BY year, p.category
 ORDER BY year, revenue DESC;
 
--- 8) Monthly revenue trend (fixed: replaced placeholder)
+-- 8) Monthly revenue trend
 SELECT strftime('%Y-%m', date) AS month,
        ROUND(SUM(revenue), 2) AS total_revenue
 FROM sales
