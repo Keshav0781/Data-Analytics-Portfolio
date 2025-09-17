@@ -19,7 +19,15 @@ M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremb
 - Exploratory data analysis, forecasting models, and executive dashboards  
 - Models: Linear Regression, Random Forest, Time Series Forecasting  
 - Outputs saved under `/reports/` for reproducibility  
-- Demonstrates how analytics informs inventory planning and seasonal stock decisions  
+- Demonstrates how analytics informs inventory planning and seasonal stock decisions
+
+### 2. [Sales & Marketing Dashboard](02-sales-marketing-dashboard/)
+**SQL + Python powered analytics project**
+- **Tech Stack:** Python, SQLite, SQL, Matplotlib, Seaborn
+- **Features:** Synthetic data generation, SQL analysis, automated reports, business dashboards
+- **Deliverables:** SQL query outputs (CSV), revenue/category trend visuals
+- **Business Impact:** Helps sales teams track KPIs, monitor performance, and optimize marketing spend
+
 
 **Key Files:**
 - [data_analysis.py](01-retail-sales-analytics/data_analysis.py) – Comprehensive exploratory analysis  
