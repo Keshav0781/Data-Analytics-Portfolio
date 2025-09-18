@@ -2,7 +2,6 @@
 Retail Sales Data Analysis
 Author: Keshav Jha
 Description: Comprehensive analysis of e-commerce sales data for pattern identification
-Dataset: Online Retail (UCI Machine Learning Repository)
 """
 
 import pandas as pd
