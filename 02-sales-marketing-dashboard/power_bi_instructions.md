@@ -26,6 +26,4 @@ This document explains how to use the synthetic sales & marketing dataset with P
 - `Total Units = SUM(sales[quantity])`
 - `Average Order Value = DIVIDE([Total Revenue], [Total Units], 0)`
 
-## Deliverables
-- Screenshot of dashboard → save in `/reports/`.
-- Export `.pbix` file → optional for portfolio.
+
