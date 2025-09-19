@@ -7,12 +7,11 @@ venv/
 # macOS
 .DS_Store
 
-# Ignore generated visuals and outputs for the Sales & Marketing project
-02-sales-marketing-dashboard/reports/visuals/
-02-sales-marketing-dashboard/reports/*.png
+
 
 # Ignore local SQLite DBs (if you don't want them tracked)
 data/processed/*.db
 
 # Other
 *.log
+Data-Analytics-Portfolio/
