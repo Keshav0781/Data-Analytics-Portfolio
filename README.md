@@ -1,15 +1,16 @@
-# Data Analytics & Machine Learning Portfolio
+# Data Analytics Portfolio
 
-Welcome to my portfolio! This repository highlights projects in **data analytics, machine learning, and software development**. Each project is end-to-end, with reproducible code, documentation, and generated outputs.
+Welcome to my portfolio! This repository highlights projects in **data analytics and business intelligence**.  
+Each project is end-to-end, with reproducible code, documentation, and generated outputs.
 
 ## 👨‍💻 About Me
-M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremberg with 4+ years of combined experience in analytics and software development. Skilled in Python, SQL, and cloud-based solutions, I enjoy building scalable, data-driven systems that combine statistical analysis, machine learning, and software engineering.
+M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremberg with 4+ years of combined experience in analytics and software development. Skilled in Python, SQL, and dashboarding, I focus on delivering actionable insights and scalable reporting solutions.
 
 ## 🛠️ Technical Skills
 - **Programming:** Python, SQL, R, Java  
 - **Visualization:** Power BI, Matplotlib, Seaborn, Plotly  
-- **Machine Learning:** Regression, Random Forest, Time Series, Deep Learning  
-- **Databases:** SQL Server, MySQL, PostgreSQL  
+- **Analytics & Modeling:** Regression, Random Forest, Time Series Forecasting  
+- **Databases:** SQL Server, MySQL, PostgreSQL, SQLite  
 - **Tools:** Pandas, NumPy, Git, Docker, Airflow  
 
 ## 📊 Featured Projects
@@ -19,23 +20,14 @@ M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremb
 - Exploratory data analysis, forecasting models, and executive dashboards  
 - Models: Linear Regression, Random Forest, Time Series Forecasting  
 - Outputs saved under `/reports/` for reproducibility  
-- Demonstrates how analytics informs inventory planning and seasonal stock decisions
+- Demonstrates how analytics informs inventory planning and seasonal stock decisions  
 
 ### 2. [Sales & Marketing Dashboard](02-sales-marketing-dashboard/)
 **SQL + Python powered analytics project**
-- **Tech Stack:** Python, SQLite, SQL, Matplotlib, Seaborn
-- **Features:** Synthetic data generation, SQL analysis, automated reports, business dashboards
-- **Deliverables:** SQL query outputs (CSV), revenue/category trend visuals
-- **Business Impact:** Helps sales teams track KPIs, monitor performance, and optimize marketing spend
-
-
-**Key Files:**
-- [data_analysis.py](01-retail-sales-analytics/data_analysis.py) – Comprehensive exploratory analysis  
-- [demand_forecasting.py](01-retail-sales-analytics/demand_forecasting.py) – Forecasting models for demand prediction  
-- [data_visualization.py](01-retail-sales-analytics/data_visualization.py) – Executive dashboards and advanced visualizations  
-- [sample_data.csv](01-retail-sales-analytics/sample_data.csv) – Example dataset for reproducibility  
- 
-
+- **Tech Stack:** Python, SQLite, SQL, Matplotlib, Seaborn  
+- **Features:** Synthetic data generation, SQL analysis, automated reports, business dashboards  
+- **Deliverables:** SQL query outputs (CSV), revenue/category trend visuals (PNG)  
+- **Business Impact:** Helps sales teams track KPIs, monitor performance, and optimize marketing spend  
 
 ---
 
@@ -50,5 +42,6 @@ M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremb
 
 ---
 
-### 🚀 Repository Status: **Actively Maintained**
-*This portfolio is continuously updated with new projects in data science, analytics, and software engineering.*
+### 🚀 Repository Status: **Analytics Projects Maintained**
+*This portfolio is continuously updated with new **data analytics and BI projects**.  
+For advanced ML & AI work, please see the separate [Data-Science-Portfolio](https://github.com/Keshav0781/Data-Science-Portfolio).*
