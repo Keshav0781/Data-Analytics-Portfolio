@@ -382,6 +382,7 @@ class DemandForecaster:
                 "day_of_week": d.weekday(),
                 "is_weekend": 1 if d.weekday() >= 5 else 0,
                 "demand_lag_1": lag_1,
+                "demand_lag_14": lag_7,
                 "demand_lag_7": lag_7,
                 "demand_lag_30": lag_30,
                 "demand_ma_7": ma_7,
