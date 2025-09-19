@@ -35,7 +35,27 @@ python data_analysis.py
 python demand_forecasting.py
 python data_visualization.py
 ```
-## Result
-- Improved seasonal stock prediction accuracy
-- Identified key factors affecting demand
-- Created automated forecasting pipeline
+The project produces aggregated reports, forecasting metrics, and visual dashboards.
+
+### Model Performance
+
+| Model            |   MAE  |  RMSE  |  MAPE  |   R²   |
+|------------------|--------|--------|--------|--------|
+| RandomForest     | 18.02  | 21.73  |  8.28% | 0.896  |
+| LinearRegression | 23.83  | 32.47  | 11.07% | 0.768  |
+| MovingAverage    | 43.43  | 57.55  | 23.10% | 0.270  |
+
+### Forecast Visualizations
+
+- **Actual vs Predicted Demand**
+  ![Forecast Actual vs Predicted](reports/forecast_actual_vs_pred.png)
+
+- **Feature Importance (RandomForest)**
+  ![Feature Importance](reports/feature_importance.png)
+
+- **Residuals (RandomForest)**
+  ![Residuals](reports/forecast_residuals.png)
+
+### Future Forecast
+
+The system also generates a **30-day demand forecast** saved as:
