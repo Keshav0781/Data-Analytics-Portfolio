@@ -60,7 +60,7 @@ The project produces aggregated reports, forecasting metrics, and visual dashboa
 
 ### Future Forecast
 
-The system also generates a **30-day demand forecast** saved as: reports/future_forecast.csv
+The system also generates a **30-day demand forecast** saved as: `reports/future_forecast.csv`
 #### Sample structure of `future_forecast.csv`
 
 ```csv
