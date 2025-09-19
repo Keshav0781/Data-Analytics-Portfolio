@@ -52,3 +52,17 @@ python 02_run_queries.py
 
 # Generate dashboard visuals
 python dashboard_visuals.py
+```
+## Results
+
+The project produces both tabular reports (CSV files under `reports/queries/`) and visual dashboards.  
+Below are some of the generated charts:
+
+### Revenue by Region
+![Revenue by Region](reports/visuals/revenue_by_region.png)
+
+### Top Categories by Revenue
+![Top Categories](reports/visuals/top_categories.png)
+
+### Monthly Sales Trend
+![Monthly Trend](reports/visuals/monthly_trend.png)
