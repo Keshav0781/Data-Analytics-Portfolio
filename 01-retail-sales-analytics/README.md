@@ -60,4 +60,22 @@ The project produces aggregated reports, forecasting metrics, and visual dashboa
 
 ### Future Forecast
 
-The system also generates a **30-day demand forecast** saved as:
+The system also generates a **30-day demand forecast** saved as: reports/future_forecast.csv
+#### Sample structure of `future_forecast.csv`
+
+```csv
+date,predicted_demand
+2024-01-01,125
+2024-01-02,131
+2024-01-03,128
+```
+#### Outputs created by the pipeline
+- `reports/daily_aggregated.csv` — aggregated daily demand & revenue  
+- `reports/features_prepared.csv` — engineered features for training  
+- `reports/forecast_metrics.csv` — evaluation metrics (CSV)  
+- `reports/forecast_predictions.csv` — actual vs predicted values (test window)  
+- `reports/forecast_actual_vs_pred.png` — actual vs predicted plot  
+- `reports/feature_importance.png` — feature importance chart  
+- `reports/forecast_residuals.png` — residuals diagnostic plot  
+- `reports/future_forecast.csv` — 30-day demand forecast  
+- `models/` — trained model artifacts
