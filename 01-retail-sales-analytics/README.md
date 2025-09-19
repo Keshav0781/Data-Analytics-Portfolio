@@ -58,6 +58,17 @@ The project produces aggregated reports, forecasting metrics, and visual dashboa
 - **Residuals (RandomForest)**
   ![Residuals](reports/forecast_residuals.png)
 
+### Interpretation of Forecast Visualizations
+
+- **Actual vs Predicted Demand**  
+  This plot compares the true daily demand with model predictions.  
+  The **RandomForest model** closely follows the actual demand trend, showing higher accuracy than LinearRegression and the MovingAverage baseline.  
+
+- **Residuals (RandomForest)**  
+  Residuals represent the difference between actual and predicted demand.  
+  The points are scattered evenly around zero, indicating the model is not systematically biased.  
+  Wider spread at higher values is normal in demand forecasting and reflects real-world variability.  
+
 ### Future Forecast
 
 The system also generates a **30-day demand forecast** saved as: `reports/future_forecast.csv`
