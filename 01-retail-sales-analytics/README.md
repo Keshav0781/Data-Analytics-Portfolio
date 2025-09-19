@@ -69,7 +69,7 @@ The project produces aggregated reports, forecasting metrics, and visual dashboa
   The points are scattered evenly around zero, indicating the model is not systematically biased.  
   Wider spread at higher values is normal in demand forecasting and reflects real-world variability.  
 
-### Future Forecast
+## Future Forecast
 
 The system also generates a **30-day demand forecast** saved as: `reports/future_forecast.csv`
 #### Sample structure of `future_forecast.csv`
