@@ -19,15 +19,15 @@ M.Sc. Data Science candidate at Friedrich-Alexander-Universität Erlangen-Nuremb
 **End-to-end analytics solution using synthetic retail data**
 - Exploratory data analysis, forecasting models, and executive dashboards  
 - Models: Linear Regression, Random Forest, Time Series Forecasting  
-- Outputs saved under `/reports/` for reproducibility  
+- **Deliverables:** Forecasting metrics (CSV), future demand predictions, visual reports (PNG)  
 - Demonstrates how analytics informs inventory planning and seasonal stock decisions  
 
 ### 2. [Sales & Marketing Dashboard](02-sales-marketing-dashboard/)
 **SQL + Python powered analytics project**
 - **Tech Stack:** Python, SQLite, SQL, Matplotlib, Seaborn  
 - **Features:** Synthetic data generation, SQL analysis, automated reports, business dashboards  
-- **Deliverables:** SQL query outputs (CSV), revenue/category trend visuals (PNG)  
-- **Business Impact:** Helps sales teams track KPIs, monitor performance, and optimize marketing spend  
+- **Deliverables:** SQL query outputs (CSV), revenue/category trend visuals (PNG), Power BI replication guide  
+- **Business Impact:** Helps sales teams track KPIs, monitor performance, and optimize marketing spend   
 
 ---
 
