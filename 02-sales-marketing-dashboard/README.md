@@ -66,3 +66,5 @@ Below are some of the generated charts:
 
 ### Monthly Sales Trend
 ![Monthly Trend](reports/visuals/monthly_trend.png)
+
+These dashboards provide actionable insights for sales managers, enabling better regional planning, product strategy, and marketing spend optimization.
