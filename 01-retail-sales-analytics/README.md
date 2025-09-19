@@ -35,6 +35,8 @@ python data_analysis.py
 python demand_forecasting.py
 python data_visualization.py
 ```
+## Results
+
 The project produces aggregated reports, forecasting metrics, and visual dashboards.
 
 ### Model Performance
